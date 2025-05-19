@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CNPJ Pay - Banco do Empreendedor</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-papOYH4OLaLbB9P8VNHMOBP5K4J7Yr9NMQ3c+aD9yYwrbF+iYvYr2NWrx4z7g7Nw+bCMBxzYBt38o/F6nrdzJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  
+  <header class="hero" style="background-image: url('https://iili.io/3PhrtVt.jpg');">
+    
+    <!-- ✅ TOPO FIXO (navegação com botões estáticos no canto superior direito) -->
+    <nav class="fixed-top-nav">
+      <a href="#quem-somos" class="btn-transparent small fade-in-left">Saiba Mais</a>
+      <button class="btn-green small fade-in-left" onclick="toggleForm()">Solicitar Conta</button>
+    </nav>
+
+    <!-- ✅ CONTEÚDO ESQUERDO DO HERO -->
+    <div class="hero-content-left">
+      <div class="hero-box-left">
+        <img src="https://iili.io/3PjYBNS.png" alt="CNPJ Pay Logo" class="logo-pay fade-in-left" />
+        
+        <h1 class="headline fade-in-left">
+          Sua <span class="bold">Conta PJ</span><br />
+          num piscar de olhos ;)
+        </h1>
+
+        <p class="subheadline fade-in-left">
+          Solicite agora a sua conta no banco oficial do<br />
+          empreendedor. Anuidade zero, PIX sem taxa e a maquininha<br />
+          mais legal do Brasil para <span class="bold">formalizar o seu negócio</span>.
+        </p>
+
+        <button class="btn-green fade-in-left" onclick="toggleForm()">Solicitar Conta</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ✅ FRAME 2 -->
+<section class="frame frame-2-center" id="frame2">
+  <div class="frame2-content">
+    <img
+      src="https://res.cloudinary.com/dudblrpu5/image/upload/v1747633242/legalzinha_01_lyaxii.png"
+      alt="Legalzinha"
+      class="rotating-machine"
+      id="machineImg"
+    />
+
+    <h2 class="frame2-title">A maquininha que gira vendas com você</h2>
+
+    <p class="frame2-subtitle">
+      Conheça a nova Legalzinha, a maquininha oficial do CNPJ Legal. Com design moderno e tecnologia de ponta, ela foi criada para quem quer vender com presença, estilo e praticidade.
+    </p>
+    
+    <p class="frame2-subtitle">
+      Ideal para MEIs, autônomos e pequenos negócios. Aceite pagamentos via PIX e cartão com taxas super competitivas e integração direta com sua conta CNPJ Pay.
+    </p>
+
+    <button class="btn-green" onclick="toggleForm()">Solicitar agora</button>
+  </div>
+</section>
+
+  <!-- ✅ FRAME 3 -->
+<section class="frame parallax-frame" id="frame3"></section>
+
+  <!-- ✅ FRAME 4: PERFIL CLIENTE -->
+  <section class="frame perfil-cliente" id="frame4" style="background-color: #003CFF;">
+    <div class="frame4-content">
+      <h2 class="frame4-title green-text center">
+        A conta feita sob medida para<br> quem empreende de verdade
+      </h2>
+      <p class="frame4-subtitle white-text center">
+        Do MEI ao autônomo, passando por prestadores e lojistas, o CNPJ Pay é<br>
+        a solução bancária que acompanha seu ritmo e entende suas necessidades.
+      </p>
+  
+      <div class="cards vertical">
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+          <p>Microempreendedor<br>Individual</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <p>Prestador<br>de Serviços</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-store"></i></div>
+          <p>Lojista ou<br>E-commerce</p>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <p>Autônomo ou<br>Freteiro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ FRAME 5: QUEM SOMOS ATUALIZADO -->
+<section id="quem-somos" class="frame quem-somos" style="background-image: url('https://iili.io/3Pw2Sb2.jpg'); background-position: top; background-size: cover;">
+  <div class="frame5-container">
+    <div class="frame5-text-left">
+      <h2 class="green-text">O banco feito para quem faz 💼</h2>
+      <p class="white-text">
+        Somos o braço financeiro do CNPJ Legal. Um banco pensado para você, empreendedor brasileiro, que precisa de soluções simples, rápidas e sem burocracia. Com CNPJ Pay, você tem conta digital, maquininha e crédito em um só lugar. Mais que um banco, um parceiro para seu negócio crescer.
+      </p>
+      <button class="btn-green">Saiba Mais</button>
+    </div>
+    <div class="frame5-img-right">
+      <img src="https://iili.io/3PjNbrQ.png" alt="Legalzinha Maquininha" />
+    </div>
+  </div>
+</section>
+
+  <!-- ✅ FRAME 6 -->
+<section class="frame final-cta">
+  <div class="cta-card">
+    <img src="https://iili.io/3PjYBNS.png" alt="CNPJ Pay" class="logo-center" />
+    <h2 class="green-text">Pronto para fazer parte do banco do empreendedor?</h2>
+    <p class="white-text">Clique no botão abaixo e entre na fila de espera. O futuro do seu negócio começa aqui.</p>
+    <button class="btn-green" onclick="toggleForm()">Solicitar Conta</button>
+  </div>
+</section>
+
+  <!-- ✅ FRAME 7 - FAQ -->
+  <section class="frame faq" style="background-color: #000;">
+    <h2 class="white-text center">Perguntas Frequentes</h2>
+    <div class="faq-container">
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="question">✅ O que é o CNPJ Pay?</div>
+        <div class="answer">É o banco oficial do empreendedor, criado pelo CNPJ Legal para facilitar sua vida financeira.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="question">💸 Quanto custa abrir a conta?</div>
+        <div class="answer">Zero anuidade, PIX gratuito e tarifas justas. Transparência sempre!</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="question">📦 Quais serviços estão inclusos?</div>
+        <div class="answer">Conta digital, cartão, maquininha, crédito e muito mais.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFAQ(this)">
+        <div class="question">📱 Como recebo atualizações?</div>
+        <div class="answer">Via WhatsApp e email. Ao se cadastrar, você entra na fila e recebe tudo em tempo real.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ POPUP FORM + AGRADECIMENTO -->
+  <div id="overlay" class="overlay hidden" onclick="toggleForm()"></div>
+  <div id="popup-form" class="popup hidden">
+    <span class="close-btn" onclick="toggleForm()">×</span>
+    <img src="https://iili.io/3PwcOru.png" alt="Form Banner" class="form-banner-transparent" />
+
+    <!-- ✅ FORMULÁRIO -->
+    <form id="lead-form">
+      <input type="text" name="nome" placeholder="Seu nome completo" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <input type="text" name="whatsapp" placeholder="Seu WhatsApp" required />
+      <input type="text" name="cpf" placeholder="Seu CPF" required />
+      <input type="date" name="nascimento" required />
+      <input type="text" name="endereco" placeholder="Endereço completo" required />
+      <button type="submit" class="btn-green">Enviar</button>
+    </form>
+
+<!-- ✅ MENSAGEM DE AGRADECIMENTO -->
+<div id="thank-you" class="thank-you hidden">
+  <img src="https://iili.io/3iMaHej.png" alt="CNPJ Pay" class="logo-center" style="margin: 0 auto 30px; display: block; width: 100px;" />
+  <h2 class="green-text center">Inscrição concluída com sucesso!</h2>
+  <p class="center">Obrigado por se cadastrar. Enviaremos atualizações por WhatsApp e e-mail em breve.</p>
+  <button class="btn-green" onclick="restartForm()">Fazer nova solicitação</button>
+</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
