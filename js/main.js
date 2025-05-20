@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      fetch('/.netlify/functions/send', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
+      fetch('/api/send', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data)
+});
 
       const result = await res.json();
 
