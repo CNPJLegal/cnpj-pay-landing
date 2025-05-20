@@ -17,14 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
       endereco: form.endereco.value,
     };
 
-    try {
-      fetch('/api/send', {
+    const res = await fetch('/api/send', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(data)
 });
 
-      const result = await res.json();
+const result = await res.json();
 
       if (res.ok && result.status === 'success') {
         form.style.display = 'none';
