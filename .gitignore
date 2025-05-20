@@ -1,0 +1,13 @@
+# Ignora dependências locais
+node_modules/
+
+# Ignora variáveis sensíveis
+.env
+
+# Ignora arquivos inúteis do sistema
+.DS_Store
+
+# Ignora logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
