@@ -17,7 +17,7 @@ exports.handler = async (event) => {
 
     // ✅ Autenticação com Google
     const auth = new GoogleAuth({
-      credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT),
+      credentials: JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT.replace(/\\n/g, '\n')),
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
