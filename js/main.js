@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      fetch('/api/send', {
+      fetch('/.netlify/functions/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
