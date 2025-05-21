@@ -158,31 +158,28 @@
     </div>
   </section>
 
-  <!-- ✅ POPUP FORM + AGRADECIMENTO -->
-  <div id="overlay" class="overlay hidden" onclick="toggleForm()"></div>
-  <div id="popup-form" class="popup hidden">
-    <span class="close-btn" onclick="toggleForm()">×</span>
-    <img src="https://iili.io/3PwcOru.png" alt="Form Banner" class="form-banner-transparent" />
+<!-- ✅ FORM -->
+ <form id="lead-form">
+  <input type="text" name="nome" placeholder="Seu nome completo" required />
+  <input type="email" name="email" placeholder="Seu e-mail" required />
+  <input type="text" name="whatsapp" placeholder="Seu WhatsApp" required />
+  <input type="text" name="cpf" placeholder="Seu CPF" required />
+  <input type="date" name="nascimento" required />
+  
+  <!-- Endereço dividido -->
+  <input type="text" name="pais" placeholder="País" required />
+  <input type="text" name="estado" placeholder="Estado" required />
+  <input type="text" name="cidade" placeholder="Cidade" required />
+  <input type="text" name="rua_numero" placeholder="Rua e Número" required />
+  <input type="text" name="cep" placeholder="CEP" required />
 
-    <!-- ✅ FORMULÁRIO -->
-    <form id="lead-form">
-      <input type="text" name="nome" placeholder="Seu nome completo" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <input type="text" name="whatsapp" placeholder="Seu WhatsApp" required />
-      <input type="text" name="cpf" placeholder="Seu CPF" required />
-      <input type="date" name="nascimento" required />
-      <input type="text" name="endereco" placeholder="Endereço completo" required />
-      <button type="submit" class="btn-green">Enviar</button>
-    </form>
+  <!-- Consentimento -->
+  <label style="display: block; margin: 10px 0;">
+    <input type="checkbox" name="consentimento" required />
+    Autorizo o uso dos meus dados para comunicações sobre o banco e abertura de conta.
+  </label>
 
-<!-- ✅ MENSAGEM DE AGRADECIMENTO -->
-<div id="thank-you" class="thank-you hidden">
-  <img src="https://iili.io/3iMaHej.png" alt="CNPJ Pay" class="logo-center" style="margin: 0 auto 30px; display: block; width: 100px;" />
-  <h2 class="green-text center">Inscrição concluída com sucesso!</h2>
-  <p class="center">Obrigado por se cadastrar. Enviaremos atualizações por WhatsApp e e-mail em breve.</p>
-  <button class="btn-green" onclick="restartForm()">Fazer nova solicitação</button>
-</div>
-
-  <script src="js/main.js"></script>
+  <button type="submit" class="btn-green">Enviar</button>
+</form>
 </body>
 </html>
