@@ -1,4 +1,4 @@
-// ✅ Envio do formulário via Netlify Function (/api/send)
+// ✅ Envio do formulário via Google Apps Script
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('lead-form');
   const thankYou = document.getElementById('thank-you');
@@ -14,28 +14,28 @@ document.addEventListener('DOMContentLoaded', () => {
       whatsapp: form.whatsapp.value,
       cpf: form.cpf.value,
       nascimento: form.nascimento.value,
-      endereco: form.endereco.value,
+      pais: form.pais.value,
+      estado: form.estado.value,
+      cidade: form.cidade.value,
+      rua_numero: form.rua_numero.value,
+      cep: form.cep.value,
+      consentimento: form.consentimento.checked ? "Sim" : "Não",
     };
 
     try {
-      const res = await fetch('/api/send', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+      await fetch("https://script.google.com/macros/s/AKfycby4VWcmLAqRUkLTR5beMvjI2oam_p3R_rd51QLmj54fI6YVkm40Bwr4zYoEevczxKeMZQ/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
 
-      const result = await res.json();
-
-      if (res.ok && result.status === 'success') {
-        form.style.display = 'none';
-        thankYou.classList.remove('hidden');
-        thankYou.classList.add('show');
-      } else {
-        alert('❌ Erro ao enviar os dados. Tente novamente.');
-      }
+      form.style.display = 'none';
+      thankYou.classList.remove('hidden');
+      thankYou.classList.add('show');
     } catch (err) {
       alert('⚠️ Erro de conexão com o servidor.');
-      console.error('Erro no envio:', err);
+      console.error('❌ Erro no envio:', err);
     }
   });
 });
